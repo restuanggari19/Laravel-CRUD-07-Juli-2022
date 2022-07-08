@@ -9,6 +9,10 @@
 </head>
 <body>
   <div class="card-body">
+  <div class="card-header">
+      <h3 class="card-title position-relative text-center">Data Booking Antrian Puskesmas</h3>
+      <a role="button" href="{{ route('keluar') }}" class="btn btn-dark">Logout</a> 
+  </div>
 <table class="table table-bordered">
   <thead>
     <tr>
@@ -31,14 +35,14 @@
             <td>{{ $data->no_handphone}}</td>
             <td>{{ $data->alamat}}</td>
             <td>
-               <a href="/edit/{{ $data->nik}}" class="btn btn-success">EDIT</a>
-              <button type="button" class="btn btn-danger">DELETE</button>
+               <a href="/edit/{{ $data->nik }}" class="btn btn-primary">EDIT</a>
+              <a href="/delete/{{ $data->nik }}" class="btn btn-danger">DELETE</a>
             </td>
         </tr>
         @endforeach
   </tbody>
 </table>
-<a href="/tambah" type="submit" class="btn btn-primary btn-lg">TAMBAH</a>
+<a href="/create" type="submit" class="btn btn-success btn-lg">TAMBAH</a>
 </div>
 </body>
 </html>

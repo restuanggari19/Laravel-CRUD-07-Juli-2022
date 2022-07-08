@@ -68,4 +68,13 @@ class DataController extends Controller
         else return 'gagal update data';
     }
 
+    // make delete data from databases
+    public function delete($nik)
+    {
+        $delete = Antrian::where('nik', $nik)->delete();
+
+        if($delete) return redirect('/Tampilan');
+        else return 'gagal delete data';
     }
+
+}

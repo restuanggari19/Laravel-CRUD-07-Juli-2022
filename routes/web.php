@@ -14,11 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('login');
 });
 
 Route::get('/Tampilan', [App\Http\Controllers\DataController::class, 'tampilan']);
 Route::get('/edit/{id}', [App\Http\Controllers\DataController::class, 'edit']);
-Route::get('tambah', [App\Http\Controllers\DataController::class, 'create']);
-Route::post('tambah', [App\Http\Controllers\DataController::class, 'store']);
+Route::post('/tambah', [App\Http\Controllers\DataController::class, 'store']);
+Route::get('/create', [App\Http\Controllers\DataController::class, 'create']);
 Route::post('/update', [App\Http\Controllers\DataController::class, 'update']);
+Route::get('/login', [App\Http\Controllers\LoginController::class, 'index']);
+Route::post('/postLogin', [App\Http\Controllers\LoginController::class, 'pLogin'])->name('pLogin');
+Route::get('logout', [App\Http\Controllers\LoginController::class, 'keluar'])->name('keluar');
+Route::get('/delete/{id}', [App\Http\Controllers\DataController::class, 'delete']);
