@@ -12,11 +12,11 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
--- Membuang data untuk tabel db_restapi.antrians: ~0 rows (lebih kurang)
+-- Membuang data untuk tabel db_restapi.antrians: ~2 rows (lebih kurang)
 /*!40000 ALTER TABLE `antrians` DISABLE KEYS */;
 INSERT INTO `antrians` (`nik`, `nama_pasien`, `jenis_kelamin`, `no_antrian`, `no_handphone`, `alamat`, `created_at`, `updated_at`) VALUES
-	(1234, 'Anggari', 'laki', '002', '09748648', 'bandung', NULL, NULL),
-	(1235, 'Restu', 'laki', '002', '09748648', 'bandung', NULL, NULL);
+	(1111, 'Restu Anggari', 'Laki-laki', '002', '085703277963', 'Dusun Bagolo Kolot, RT/RW 13/07, Desa Bagolo, Kecamatan Kalipucang, Kabupaten Pangandaran.', NULL, '2022-07-07 03:38:39'),
+	(1234, 'Anggari Restu', 'Laki-laki', '003', '0857032779634', 'Dusun Bagolo Kolot, RT/RW 13/07, Desa Bagolo, Kecamatan Kalipucang, Kabupaten Pangandaran.', NULL, '2022-07-07 10:19:16');
 /*!40000 ALTER TABLE `antrians` ENABLE KEYS */;
 
 -- Membuang data untuk tabel db_restapi.failed_jobs: ~0 rows (lebih kurang)
@@ -48,8 +48,6 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 
 -- Membuang data untuk tabel db_restapi.users: ~0 rows (lebih kurang)
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` (`id`, `name`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-	(1, 'admin', '$2y$10$nBqS/2tdjE.OJ5zqD8qWLeoc8WU9I50TLrZ7O.WARILukP1AGAzuG', NULL, '2022-07-08 07:21:28', '2022-07-08 07:21:28');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
