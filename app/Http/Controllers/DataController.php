@@ -23,10 +23,10 @@ class DataController extends Controller
     {
         $this->validate($request, [
             'nik' => 'required',
-            'nama_pasien' => 'required',
-            'jenis_kelamin' => 'required',
+            'pasien' => 'required',
+            'kelamin' => 'required',
             'no_antrian' => 'required',
-            'no_handphone' => 'required',
+            'no_hp' => 'required',
             'alamat' => 'required',
         ]);
     

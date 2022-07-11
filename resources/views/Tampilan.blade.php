@@ -11,7 +11,7 @@
   <div class="card-body">
   <div class="card-header">
       <h3 class="card-title position-relative text-center">Data Booking Antrian Puskesmas</h3>
-      <a role="button" href="{{ route('keluar') }}" class="btn btn-dark">Logout</a> 
+      <a type="submit" href="{{ route('keluar') }}" class="btn btn-dark">Logout</a> 
   </div>
 <table class="table table-bordered">
   <thead>
@@ -42,7 +42,7 @@
         @endforeach
   </tbody>
 </table>
-<a href="/create" type="submit" class="btn btn-success btn-lg">TAMBAH</a>
+<a href="/create" type="submit" class="btn btn-success">TAMBAH</a>
 </div>
 </body>
 </html>

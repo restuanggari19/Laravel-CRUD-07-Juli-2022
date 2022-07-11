@@ -12,7 +12,8 @@ class Antrian extends Model
     protected $table = 'antrians';
     protected $primaryKey = 'nik';
 
-    protected $fillabile = [
+    protected $fillable = [
+        'nik',
         'nama_pasien',
         'jenis_kelamin',
         'no_antrian',
